@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Spartan:300,400,500,600,700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>portfolio-saki</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap-custom.css">
+  <link href="css/style.css" rel="stylesheet">
+  <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-sm navbar-light head">
+
+
+       <a class="navbar-brand" href="index.html">Saki Yasuda</a>
+       <div type="button" class="navbar-toggler" data-toggle="collapse" data-target="#Navbar" aria-controls="Navbar" aria-expanded="false" aria-label="レスポンシブ・ナビゲーションバー">
+          <span class="navbar-toggler-icon"></span>
+       </div>
+       <div class="collapse navbar-collapse justify-content-end" id="Navbar">
+           <ul class="navbar-nav">
+               <li class="nav-item active">
+                   <a class="nav-link" href="index.html">Work</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="about.html">About</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="https://www.instagram.com/saki.watercolor/ " target="_blank">Private</a>
+               </li>
+
+           </ul>
+       </div>
+   </nav>
+
+   <div class="d-none d-sm-block mainpic">
+   <img src="img/doghuggy/mainpic_designsystem_article_PC.png" class="img-fluid d-none d-sm-block" alt="Responsive image">
+   </div>
+   <div class="d-sm-none">
+   <img src="img/doghuggy/mainpic_designsystem_article_SP.png" class="img-fluid" alt="Responsive image">
+   </div>
+
+
+  <section class="p_section p_section--text">
+      <div class="ufo--p-container-fluid p-container-fluid-margin">
+        <div class="text-intro text-container">
+
+        <h1 class="h1-line-height">DogHuggy DesignSystem</h1>
+          <p class="title-jp">DogHuggy デザインシステムの構築</p>
+
+          <div class="item">
+            <p class="detail font-weight-bold">担当</p>
+            <p class="detail">UIデザイン</p>
+          </div>
+          <div class="item">
+            <p class="detail font-weight-bold">期間</p>
+            <p class="detail">2019年8月〜9月</p>
+          </div>
+
+          <div class="outline">
+            <p>
+              DogHuggyは、旅行や外出で犬をお世話して欲しい飼い主と、現在もしくはこれまでに犬の飼育経験があるホストをマッチングするサービスです。
+
+              今回、統一性に欠けていスタイルやコンポーネントを見直し、デザイナーとエンジニアが改善しやすい体制を整えるべくデザインシステムの導入を行いました。</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="ufo--p-container-fluid p-container-fluid-margin">
+
+      <hr>
+      <div class="col-lg-12 first-title">
+        <p class="en-title">Introduction</p>
+      </div>
+      <hr>
+
+    </div>
+
+
+    <section class="p_section p_section--text">
+      <div class="ufo--p-container-fluid p-container-fluid-margin">
+        <div class="text-container">
+
+          <h3 class="container-fluid-title">構築の背景</h3>
+          <p>元々簡単なガイドラインは存在していたものの、UIに関しては存在せず、
+            メインのデザイナーも不在なことからPMがデザインし、エンジニアが独自に実装をしていました。
+          </p>
+          <p>
+            そのため開発スピードも落ち、統一感が失われているのが現状でした。
+            繰り返し改善が必要なこと、今後展開するサービスとの整合性も必要なことから開発、
+            運用しやすいガイドラインの見直しと構築を必要としていました。
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="ufo--p-container-fluid p-container-fluid-margin">
+
+      <hr>
+      <div class="col-lg-12 first-title">
+        <p class="en-title">Approach</p>
+      </div>
+      <hr>
+
+    </div>
+
+
+    <section class="p_section p_section--text">
+      <div class="ufo--p-container-fluid p-container-fluid-margin">
+        <div class="text-container">
+
+          <h3 class="container-fluid-title">目的と対象範囲</h3>
+          <p>まずは構築するにあたって予め目的や対象範囲、流れや進め方を整理し、全体に共有することからはじめました。
+          </p>
+
+                <h5 class="container-fluid-h5 container-fluid-h5-mt">目的</h5>
+                <div class="c-outline-block c-outline-block-mt">
+                    <p><b>・生産性をあげる：</b>使い回し可能な状態にし、迅速な開発を</p>
+                    <p><b>・サービスの一貫性を保つ：</b>DogHuggyのイメージ</p>
+                </div>
+
+                <h5 class="container-fluid-h5 container-fluid-h5-mt">対象範囲</h5>
+                <p>メインのデザイナーが不在になりがちなため、定義するだけでなく、現状の問題点を考慮した上で使用ガイドのような形でまとめることも視野に入れました。
+                </p>
+                <p>定義するスタイルとコンポーネントは一旦、使用頻度の高い要素のみとしました。</p>
+
+                <div class="c-outline-block c-outline-block-mt">
+
+                  <p><b>・スタイル</b><br>カラー / タイポグラフィ / アイコン / スペーシング/サイズの定義及ドキュメントガイド</p>
+
+                  <p><b>・コンポーネント</b><br>ボタン / インプットの定義及ドキュメントガイド</p>
+
+                </div>
+
+            <h5 class="container-fluid-h5 container-fluid-h5-mt">適用タイミング</h5>
+            <p>スタイルやコンポーネントを定義した都度都度、反映していいけるほどエンジニアさんのリソースがない点、
+            私も改善業務と並行なため、反映しても違う画面を改善している際に調整がまた必要になることも考えられたため
+            ある程度形になった段階でエンジニアさんに改修と同時に反映してもらうことにしました。</p>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="p_section p_section--text">
+      <div class="ufo--p-container-fluid p-container-fluid-margin">
+        <div class="text-container">
+
+          <h3 class="container-fluid-title">取り組み方</h3>
+
+          <p>プロダクトチーム用にデザインデータはFigmaで管理することにしました。
+            改善業務と並行だったため、整備されていると作業しやすい且つ影響範囲が大きそうな部分を1〜4段階に分け業務中に少しずつ進めていきました。
+          </p>
+
+          <div class="c-outline-block c-outline-block-mt">
+            <p class="item-title">第１段階</p>
+              <p><b>・スタイル</b><br>カラー / スペーシング、サイズ</p>
+              <p><b>・コンポーネント</b><br>・ボタン</p>
+
+            <div style="margin-top:32px">
+            <p class="item-title">第２段階</p>
+            </div>
+              <p><b>・スタイル</b><br>タイポグラフィ</p>
+              <p><b>・コンポーネント</b><br>フォーム / テキストリンク</p>
+
+            <div style="margin-top:32px">
+            <p class="item-title">第３段階</p>
+            </div>
+                <p><b>・スタイル</b><br>アイコンセット</p>
+                <p><b>・コンポーネント</b><br>モーダルダイアログ</p>
+                <p><b>・ルール</b><br>ライティング</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="ufo--p-container-fluid p-container-fluid-margin">
+
+      <hr>
+      <div class="col-lg-12 first-title">
+        <p class="en-title">Styleguide</p>
+      </div>
+      <hr>
+
+    </div>
+
+    <section class="p_section p_section--text">
+      <div class="ufo--p-container-fluid p-container-fluid-margin">
+        <div class="text-container">
+
+          <h3>カラー</h3>
+
+
+                <h5 class="container-fluid-h5 container-fluid-h5-mt">カテゴライズ</h5>
+                <p>以前はメインで使われているカラーコードの記載はあったもののどういった意味合いを持つのかまでは含まれていませんでした。今回改めて使用されているカラーを調べて整理し、
+                  「Brand Colors」「Neutral Colors」「Sematic Colors」の3つのカテゴリーに分けて各々定義していくことにしました。</p>
+
+                  <div class="c-outline-block c-outline-block-mt c-outline-block-mb">
+                      <p><b>Brand Color</b><br>カラー / スペーシング、サイズ</p>
+                      <p><b>Neutral Color</b><br>・ボタン</p>
+                      <p><b>Sematic Color</b><br>・ボタン</p>
+                  </div>
+
+                  <h5 class="container-fluid-h5 container-fluid-h5-mt">プライマリーカラー</h5>
+
+
+                  <p>・導線となるカラーとしては薄いため、テキストリンクは特に見えにくい</p>
+                  <p>・ボタンテキストが焦げ茶色のせいか、コントラスト比率はクリアしてるもののどこか沈んで見える</p>
+                  <p>・かといってテキストを白色に変更すると、コントラスト比率が低くく可読性に欠ける</p>
+                  <p>プライマリーカラーのみ機能性（コントラスト比率）を優先しつつ、認知（DogHuggyの世界観）を大きく崩さない程度に良いバランスを探っていきました。</p>
+                  <p>濃くしすぎすと全体的に明るさがなくなるため最終的にコントラスト比率3.0で落ち着きました。
+                  （同時にフォントの変更も行っています（後述））</p>
+
+                  <img src="img/new-button.png" class="img-fluid img-mb" alt="Responsive image">
+
+                  <h5 class="container-fluid-h5 container-fluid-h5-mt">命名</h5>
+
+                  <p>命名に関しては、今回カラー名をつけると使用範囲や定義がわかりづらかった上にカラー数も多くないので、
+                    できるだけ「意味のある（セマンティック）」命名をしました。</p>
+                  <p>
+                  Neutral Colorのみ、レイアウト要素として複数の使用範囲が考えられたためカラー名を付けた方が運用しやすいと判断しました。<p>
+
+
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="ufo--case-study-section p_section p_section--gallery gallery image-gallery-margin image-gallery-mb">
+      <div class="ufo--p-container-fluid">
+        <div class="image-gallery">
+
+          <p class="output">Output</p>
+
+          <img src="img/doghuggy/color.png" class="img-fluid" alt="Responsive image">
+
+        </div>
+      </div>
+    </section>
+
+    <section class="p_section p_section--text">
+      <div class="ufo--p-container-fluid p-container-fluid-margin">
+        <div class="text-container">
+
+          <h3>タイポグラフィ</h3>
+
+
+                <h5 class="container-fluid-h5 container-fluid-h5-mt">タイプフェイス</h5>
+
+                <p>元々、游ゴシックを使用していましたが作りが細くて小さいため、印象が弱く小さいテキストだと若干読みづらいところが欠点でした。
+                  利用する層に50代の方も一定数おられるため、可読性を重視して選び直しを行いました。</p>
+
+                <p>実機にて念入りに確認後、iPhoneの使用者が一番多くヒラギノ角ゴシックがやはりフォントとして優れているとは思いましたが、そのキレイさに劣らず見た目のハッキリさとかわいらしさ且つ読みやすさ、何よりどのブラウザからも影響を受けず統一できる点を考え、総合的に一番バランスの良いWebフォントの<b>Noto Sans JP</b>に決めました。
+                    ただ、ヒラギノ角ゴシックより少し詰まった印象があるため、letter-spacingで調整を行いました。</p>
+
+                <img src="img/font-adjust.png" alt="" class="img-fluid" alt="Responsive image">
+
+                <h5 class="container-fluid-h5 container-fluid-h5-mt">サイズ</h5>
+                <p>サイズは13〜16pxとページによって基準がバラバラで設定されていたため、ほぼ１から設定のし直しが必要でした。
+                サイズを決める際の基準として「モジューラースケール」の手法を使い、16pxを基準に各文字サイズを決定しました。</p>
+
+
+                  <h5 class="container-fluid-h5 container-fluid-h5-mt">命名</h5>
+
+                  <p>命名については役割の例外が出てくるため、文字サイズで命名を行い、使用範囲で説明（役割）を記載しました。</p>
+
+
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="ufo--case-study-section p_section p_section--gallery gallery image-gallery-margin image-gallery-mb">
+      <div class="ufo--p-container-fluid p-container-fluid-margin">
+        <div class="image-gallery grid grid-gallery">
+
+          <p class="output">Output</p>
+          <img src="img/doghuggy/Typography.png" class="img-fluid" alt="Responsive image">
+
+        </div>
+      </div>
+    </section>
+
+    <section class="p_section p_section--text">
+      <div class="ufo--p-container-fluid p-container-fluid-margin">
+        <div class="text-container">
+
+          <h3>スペーシング</h3>
+
+                <h5 class="container-fluid-h5 container-fluid-h5-mt">スケール</h5>
+
+                <p>スペースシングは8、4の倍数を基本にしました。小さい要素同士を調整する際、8と4ではカバーできない場合は2の倍数でも可としました。</p>
+                <p>そして、文字サイズ間のスペーシングについては8と4の中でどれを使用するか作成する人によってばらつきが出そうだったので、
+                フィボナッチ数列を使ってある程度バランスの良いスペーシングサイズを定義しました。（もちろん、使いにくい場合は例外あり）</p>
+
+                <h5 class="container-fluid-h5 container-fluid-h5-mt">ドキュメント</h5>
+                <p>サイズは13〜16pxとページによって基準がバラバラで設定されていたため、ほぼ１から設定のし直しが必要でした。
+                サイズを決める際の基準として「モジューラースケール」の手法を使い、16pxを基準に各文字サイズを決定しました。</p>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="ufo--case-study-section p_section p_section--gallery gallery image-gallery-margin image-gallery-mb">
+      <div class="ufo--p-container-fluid p-container-fluid-margin">
+        <div class="image-gallery grid grid-gallery">
+
+          <p class="output">Output</p>
+          <img src="img/doghuggy/spacing.png" class="img-fluid" alt="Responsive image">
+          <img src="img/doghuggy/spacing_document.png" class="img-fluid" alt="Responsive image">
+
+        </div>
+      </div>
+    </section>
+
+    <div class="ufo--p-container-fluid">
+
+      <div class="col-lg-12 first-title">
+        <p class="en-title">Component</p>
+      </div>
+      <hr>
+
+    </div>
+
+    <section class="p_section p_section--text">
+      <div class="ufo--p-container-fluid p-container-fluid-margin">
+        <div class="text-container">
+
+          <h3>ボタン</h3>
+
+                <h5 class="container-fluid-h5 container-fluid-h5-mt">定義</h5>
+
+                <p>まずは核となるサイズと最小サイズの定義から行いました。レスポンシブのモバイルファーストなため、PCもSPと共通のサイズを使用することにしました。
+                その後、必要となる種類を表形式で並べ、それぞれ命名、役割を定義していきました。</p>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="ufo--case-study-section p_section p_section--gallery gallery image-gallery-margin image-gallery-mb">
+      <div class="ufo--p-container-fluid p-container-fluid-margin">
+        <div class="image-gallery grid grid-gallery">
+
+          <p class="output">Output</p>
+          <img src="img/doghuggy/button.png" class="img-fluid" alt="Responsive image">
+          <img src="img/doghuggy/button_document.png" class="img-fluid" alt="Responsive image">
+
+        </div>
+      </div>
+    </section>
+
+    <section class="p_section p_section--text">
+      <div class="ufo--p-container-fluid p-container-fluid-margin">
+        <div class="text-container">
+
+          <h3>インプット</h3>
+
+                <h5 class="container-fluid-h5 container-fluid-h5-mt">定義</h5>
+
+                <p>インプット類はどのパーツよりも数多くバラバラなデザインが存在していました。</p>
+                <p>それを以下のカテゴリで分けてそれぞれ定義していきました。</p>
+
+                <div class="c-outline-block">
+                  <p class="item-title">フォーム / ドロップダウン</p>
+                    <p>Default / Value / Active / Error / Disable / Long（フォームのみ)</p>
+
+                  <div style="margin-top:32px">
+                  <p class="item-title">チェックボックス / ラジオボタン</p>
+                  </div>
+                      <p>Default / Text-overflow / Mixed-value / Error</p>
+                  </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="ufo--case-study-section p_section p_section--gallery gallery image-gallery-margin image-gallery-mb">
+      <div class="ufo--p-container-fluid p-container-fluid-margin">
+        <div class="image-gallery grid grid-gallery">
+
+          <p class="output">Output</p>
+          <img src="img/doghuggy/input.png" class="img-fluid" alt="Responsive image">
+
+        </div>
+      </div>
+    </section>
+
+    <section class="p_section p_section--text">
+      <div class="ufo--p-container-fluid p-container-fluid-margin">
+        <div class="text-container">
+
+          <h3>アイコン</h3>
+
+                <h5 class="container-fluid-h5 container-fluid-h5-mt">定義</h5>
+
+                <p>アイコンはデータが存在していなかったことと、統一にも欠けていたので一から作り直しました。
+                オペレーション系のシステムとよく使う共通のアイコンとで分け、テイストは今風の親しみやすさを重視して
+                可愛らしく丸みのある且つシンプルなテイストに統一しました。</p>
+
+                <img src="img/doghuggy/old-icon.png" alt="" class="img-fluid" alt="Responsive image">
+
+
+                <h5 class="container-fluid-h5 container-fluid-h5-mt">ドキュメント</h5>
+                <p>また、作成する際のルールやサイズ、カラーなども定義し、ガイドラインにまとめました。
+                そして、使用する際の指針も一緒に記載しました。</p>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="ufo--case-study-section p_section p_section--gallery gallery image-gallery-margin image-gallery-mb">
+      <div class="ufo--p-container-fluid p-container-fluid-margin">
+        <div class="image-gallery grid grid-gallery">
+
+          <p class="output">Output</p>
+          <img src="img/doghuggy/Icon.png" class="img-fluid" alt="Responsive image">
+          <img src="img/doghuggy/icon_document.png" class="img-fluid" alt="Responsive image">
+
+        </div>
+      </div>
+    </section>
+
+    <div class="ufo--p-container-fluid">
+
+      <div class="col-lg-12 first-title">
+        <p class="en-title">Develop</p>
+      </div>
+      <hr>
+
+    </div>
+
+    <section class="p_section p_section--text">
+      <div class="ufo--p-container-fluid p-container-fluid-margin">
+        <div class="text-intro text-container">
+
+          <p>ただ今、絶賛適用中です。</p>
+          <p>副業で関わっているエンジニアさん達ばかりなので適用だけに時間を割くことはできず、こちらも改善業務の中で少しずつ適用という形をとりました。
+          適用していく中で上手く運用できるのかも観察中です。</p>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="ufo--p-container-fluid p-container-fluid-margin">
+
+      <hr>
+      <div class="col-lg-12 first-title">
+        <p class="en-title">Operetion</p>
+      </div>
+      <hr>
+
+    </div>
+
+    <section class="p_section p_section--text">
+      <div class="ufo--p-container-fluid p-container-fluid-margin">
+        <div class="text-intro text-container">
+
+          <p>無料プラン＋1ファイル内で完結しそうだったので、今回はライブラリーは活用しませんでした。
+            都度変更があった時にいじって開発中あるい開発予定のエンジニアさんを混乱させないように以下のルールを決めました。</p>
+
+          <div class="c-outline-block">
+              <p class="item-title">更新方法</p>
+                <p>① 新作のコンポーネントや変更を加えた方が良いコンポーネントやスタイルが発生</p>
+                <p>② まずはいじって検討必要な場合、別ページを作成して(Branchきる)Masterページから適用する画面をコピペ</p>
+                <p>④ SlackにてPM、エンジニアさんと相談（いじる前に相談が必要な場合はここから → 次に②へ ）</p>
+                <p>⑥ デザインデータがFixしたらデザインシステムとMasterページに反映</p>
+                <p>⑦ 必要ないと判断できた場合は、定義なしのスタイルやコンポーネントとして使用</p>
+        </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="p_section p_section--text">
+      <div class="ufo--p-container-fluid p-container-fluid-margin p-container-fluid-plusmargin">
+        <div class="text-container">
+
+            <p class="related-work">Related work</p>
+
+
+        </div>
+      </div>
+    </section>
+
+
+    <div class="container">
+
+      <div class="work">
+
+
+        <div class="row">
+
+
+        <div class="work-item">
+          <a href="work01.html" class="d-none d-md-block">
+            <img src="img/baitry/mainpic_baitry.png" class="img-fluid" alt="Responsive image">
+          </a>
+          <a href="work01.html" class="d-md-none">
+          <img src="img/baitry/mainpic_baitry_SP.png" class="img-fluid" alt="Responsive image">
+          </a>
+        </div>
+
+
+        <div class="work-item work-item-sp2">
+        <a href="work02.html" class="d-none d-md-block">
+            <img src="img/doghuggy/mainpic_designsystem2.png" class="img-fluid" alt="Responsive image">
+          </a>
+          <a href="work02.html" class="d-md-none">
+          <img src="img/doghuggy/mainpic_designsystem_SP.png" class="img-fluid" alt="Responsive image">
+          </a>
+        </div>
+
+        <div class="work-item work-item-sp2">
+        <a href="work03.html" class="d-none d-md-block">
+            <img src="img/doghuggy/mainpic_doghuggy.png" class="img-fluid" alt="Responsive image">
+          </a>
+          <a href="work03.html" class="d-md-none">
+          <img src="img/doghuggy/mainpic_doghuggy_SP.png" class="img-fluid" alt="Responsive image">
+          </a>
+        </div>
+
+        <div class="work-item work-item-sp2">
+        <a href="work04.html" class="d-none d-md-block">
+            <img src="img/activo/mainpic_activo.png" class="img-fluid" alt="Responsive image">
+          </a>
+          <a href="work04.html" class="d-md-none">
+          <img src="img/activo/mainpic_activo_SP.png" class="img-fluid" alt="Responsive image">
+          </a>
+        </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+</body>
+</html>
