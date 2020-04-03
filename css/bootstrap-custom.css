@@ -163,6 +163,14 @@ background-size: cover;
   margin-bottom:36px;
 }
 
+.p-container-fluid-plusmargin{
+  margin-top: 90px;
+}
+
+.related-work{
+  font-size:20px;
+  text-align:center;
+}
 
 @media (min-width: 992px){
 .about-container-fluid-margin{
@@ -309,7 +317,6 @@ background-size: cover;
 
 h5{
   padding: 0 16px;/*上下 左右の余白*/
-  color: #494949;/*文字色*/
   background: transparent;/*背景透明に*/
   border-left: solid 5px #FAC100;/*左線*/
 }
