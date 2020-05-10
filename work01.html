@@ -187,7 +187,7 @@
 
         <div class="c-outline-block c-outline-block-mt">
           <p>・全体として、単なるバイト探しではなく、<b>「出会いの後押し」</b>として、<b>「気軽で楽しくハッピー」</b>な雰囲気作りを目指す</p>
-          <p>・ロゴのように、元気さと楽しさ、気軽さを合わせた雰囲気を踏襲する</p>
+          <p>・ロゴのように元気さと楽しさ、気軽さを合わせた雰囲気を踏襲する</p>
         </div>
 
     </div>
@@ -339,7 +339,8 @@
         <div class="text-container">
 
           <p>応募から勤務までスムーズに操作できるよう、UI改善を行いました。以下、改善した一部を紹介します。
-          （大枠の設計はそのままに各画面のUI変更にとどめています）</p>
+          前提として、大枠の設計（流れ）への変更ではなく、今回のリニューアルの目的は新しくなった世界観をUIに反映し、それに応じて改善を行うことでした。（その後に大枠も含めて改善を行っていきます）
+          スタートアップのリリース間もない時期でもあり、スピード重視であることから、まずは「各画面の目的に対してUIがしっかり機能しているか」に観点をおいて改善を進めました。
 
 
         </div>
@@ -351,7 +352,7 @@
               <div class="ufo--p-container-fluid p-container-fluid-margin">
                 <div class="text-container">
 
-                  <h3>応募確認</h3>
+                  <h3>募集一覧と募集詳細（サービスのメインとなる画面）</h3>
 
                 </div>
               </div>
@@ -371,13 +372,84 @@
               <div class="ufo--p-container-fluid p-container-fluid-margin">
                 <div class="text-container">
 
-                  <h5 class="container-fluid-h5">課題</h5>
-                  <p>・確認と編集画面が共存しているが、どちらかと言うと編集、設定していないユーザー向けになっている。</p>
-                  <p>・手軽感や気楽に体験をうたうプロダクトにしては、応募する際の手軽感をあまり感じにくい</p>
+                  <h5 class="container-fluid-h5">前提</h5>
+
+                  <p>UI変更をするにあたり、まずは前提情報として、画面の目的及び理想となるユーザー体験を定義しました。</p>
+
+                  <p><b>目的</b><br>
+                    募集一覧：ユーザーが空いた時間を活用して行う、体験バイト探し<br>
+                    詳細：体験内容の詳細や状況確認、そして応募、辞退、連絡をする</p>
+
+                  <p><b>タッチポイント</b><br>
+                    起動直後、検索時や検討時</p>
+
+                  <p><b>制約</b><br>
+                  ・現段階ではUI変更のみであるため（コストがかかる）、大枠の設計（流れ）は変えられない。<br>
+                  ・詳細に検索できるほどの体験バイトの募集はまだない。</p>
+
+                  <div class="c-outline-block c-outline-block-mt">
+
+                    <p><b>理想状態</b></p>
+                    <p>ユーザーが望んでいる空き日時に体験したいバイトに出会い、応募できること。
+                    その際に、①どこで②何を③どのようにするのか、がスムーズに分かること。</p>
+                  </div>
+
+
+                  <h5 class="container-fluid-h5 container-fluid-h5-mt">現状（課題）</h5>
+
+                  <p>前提を踏まえ、現状はどのような状態になっているのか、理想状態を目指すためにどこが課題となりそうかを整理しました。</p>
+
+                  <div class="c-outline-block c-outline-block-mt">
+
+                    <p><b>全体</b></p>
+                    <p>以前がスポット（空き時間）を重視したコンセプトであったため、そのまま<b>「いつ」に重点が置かれたUIになっている。</b></p>
+
+                  </div>
+
+                  <div class="c-outline-block c-outline-block-mt">
+
+                    <p><b>詳細</b></p>
+                      <p>・日にちが一番最初に目に入り、次に勤務時間が目に入りやすい。そして、応募の制限時間もリアルタイムで更新されているため時間要素が強くなっている。
+                      <p>・「何をする（役割、職務）」のかに関する情報はそれほど重視されていない。</p>
+                      <p>・自身の空き日時を探す際には、上下にスクロールしなくてはならず、ユーザーにとって負荷がかかる仕様になっている。</p>
+
+                  </div>
+
+                  <img src="img/baitry/ui-before-after-08.png" class="img-fluid image-margin" alt="Responsive image">
 
                   <h5 class="container-fluid-h5 container-fluid-h5-mt">解決</h5>
-                  <p>・確認と編集画面が共存しているが、どちらかと言うと編集、設定していないユーザー向けになっている。</p>
-                  <p>・手軽感や気楽に体験をうたうプロダクトにしては、応募する際の手軽感をあまり感じにくい</p>
+
+                  上記などを踏まえ、あるべきUIの姿を定義し、どのように実現できるかを整理しました。</p>
+
+                  <div class="c-outline-block c-outline-block-mt">
+                  <p><b>全体</b><br>
+                    <p>スポット（空き時間）重視ではなく、<b>空き時間を活用してできる「体験バイト=コンテンツ」重視なUIであること。</b></p>
+                    <p>また、最終的には体験バイトを通して長期や短期の雇用に繋げることを目指しているため、人や雰囲気、情緒感が伝わりやすいUIであること。</p>
+                  </div>
+
+
+                  <div class="c-outline-block c-outline-block-mt">
+
+                    <p><b>詳細</b></p>
+                      <p>・「何をする」に重点を置けるようため、どんな求人なのかを表す「タイトル」をメインとして配置。
+                      <p>・応募締め切りまでの時間に関してはリアルタイムで更新されるのではなく、残り〇〇日や〇〇時間として表示させ、時間に急かされる感覚を緩和。</p>
+                      <p>・日にちの一覧姓を良くするために上下スクロールではなく、カレンダー表示として横にスライドさせる仕様に変更。</p>
+                      <p>・全体のテキストをBoldにすることで、コンテンツや募集としての力強さを表現。</p>
+                  </div>
+
+
+                  <img src="img/baitry/ui-before-after-07.png" class="img-fluid image-margin" alt="Responsive image">
+
+                    <p><b>その他</b></p>
+                      <p>店舗の基本情報を<b>「①日時②駅③住所④時給」</b>から<b>「①駅②住所③時給④日時」</b>に変更しました。上記に変更した理由は以下です。</p>
+
+                      <div class="c-outline-block c-outline-block-mt">
+                        <p>① スポット（いつ）からコンテンツ（何を）重視に変更のため、日時の優先順位が下がった。</p>
+                        <p>② 募集一覧画面では「①いつ②何をする③どれくらいの時給で」がメインで分かるようになっていたため、詳細画面では「④どこで」を重視して「場所」に関する情報を
+                        一番上にし、日時と時給をその次に配置。</p>
+                      </div>
+
+                      <img src="img/baitry/ui-before-after-09.png" class="img-fluid image-margin" alt="Responsive image">
 
                 </div>
               </div>
@@ -387,7 +459,148 @@
               <div class="ufo--p-container-fluid p-container-fluid-margin">
                 <div class="text-container">
 
-                  <h3>学生プロフ入力</h3>
+                  <h3>応募管理</h3>
+
+                </div>
+              </div>
+            </section>
+
+            <section class="ufo--case-study-section p_section p_section--gallery image-gallery-margin">
+              <div class="ufo--p-container-fluid">
+                <div class="image-gallery">
+
+                  <img src="img/baitry/ui-before-after-10.png" class="img-fluid" alt="Responsive image">
+
+                </div>
+              </div>
+            </section>
+
+            <section class="p_section p_section--text">
+              <div class="ufo--p-container-fluid p-container-fluid-margin">
+                <div class="text-container">
+
+                  <h5 class="container-fluid-h5">前提</h5>
+
+                  <p>UI変更をするにあたり、まずは前提情報として、画面の目的及び理想となるユーザー体験を定義しました。</p>
+
+                  <p><b>目的</b><br>
+                    応募管理：応募したアルバイト先の状況確認
+
+                  <p><b>タッチポイント</b><br>
+                    応募状況の確認時（選考中、採用済みなど）、採用や不採用後の確認時</p>
+
+                  <p><b>制約</b><br>
+                  現段階ではUI変更のみであるため（コストがかかる）、大枠の設計（流れ）は変えられない。</p>
+
+                  <div class="c-outline-block c-outline-block-mt">
+
+                    <p><b>理想のユーザー体験</b></p>
+                    <p>ユーザーが応募後に今どんな状況かを確認でき、そしてどういった結果になったのかを履歴として知れること。</p>
+                  </div>
+
+                  <h5 class="container-fluid-h5 container-fluid-h5-mt">現状（課題）</h5>
+
+                  <p>前提を踏まえ、現状はどのような状態になっているのか、理想状態を目指すためにどこが課題となりそうかを整理しました。</p>
+
+                  <div class="c-outline-block c-outline-block-mt">
+
+                    <p><b>全体</b></p>
+                    <p>応募後の処理がすべて一画面に集約されて積み上げ状態になっており、情報構造としても扱いづらい。上下スクロールではない形でプロセスに沿ってカテゴリ分けする必要がある。</p>
+
+                  </div>
+
+                  <div class="c-outline-block c-outline-block-mt">
+
+                    <p><b>詳細</b></p>
+                    <p>採用、不採用などを表示するために透過レイヤーがかかっているが、肝心の店舗情報が見えなくなっている。</p>
+
+                  </div>
+
+
+                  <img src="img/baitry/ui-before-after-12.png" class="img-fluid image-margin" alt="Responsive image">
+
+
+                  <h5 class="container-fluid-h5 container-fluid-h5-mt">解決</h5>
+
+
+                  <p>現状からどのように分けて管理されるべきかを探るため、ユーザーフローを通して情報の可視化を行いました。</p>
+
+                <div class="c-outline-block c-outline-block-mt">
+                  <p><b>ユーザーフロー</b><br>
+
+                    <p><b>勤務の場合</b><br>
+                    応募する → 応募管理にて応募した一覧を確認（選考中） → 採用通知 → 応募管理にて採用済みを確認
+                    → 勤務 → 勤務後、勤務したかどうかの確認通知 → 勤務済みを選択</p>
+
+                    <p><b>選考辞退の場合</b><br>
+                    応募する → 応募管理にて応募した一覧を確認（選考中） → 選考辞退</p>
+
+                    <p><b>お見送りの場合</b><br>
+                    応募する → 応募管理にて応募した一覧を確認（選考中） → 不採用通知</p>
+
+                    <p><b>欠勤の場合</b><br>
+                      応募する → 応募管理にて応募した一覧を確認（選考中） → 採用通知 → 応募管理にて採用済みを確認
+                       → 勤務後、勤務したかどうかの確認通知 → 欠勤を選択</p>
+                  </div>
+
+                  </div>
+                </div>
+              </section>
+
+                    <section class="ufo--case-study-section p_section p_section--gallery image-gallery-margin">
+                      <div class="ufo--p-container-fluid">
+                        <div class="image-gallery" style="background-color:white;">
+
+                          <img src="img/baitry/user-flow.png" class="img-fluid image-margin" alt="Responsive image">
+
+                        </div>
+                      </div>
+                    </section>
+
+
+                  <section class="p_section p_section--text">
+                      <div class="ufo--p-container-fluid p-container-fluid-margin">
+                        <div class="text-container">
+
+                  <p>上記の可視化から<b>「勤務に至るまでの状況確認」</b>と<b>「選考や勤務の終了後に履歴として積み上がる」</b>パターンとで区切って表示していく仕様が良さそうでした。
+                      そのため、「勤務に至るまでの状況確認」をメインとし、終了後は履歴に格納させる形で別々で作成することとしました。</p>
+
+                  </div>
+                </div>
+              </section>
+
+
+
+                  <section class="ufo--case-study-section p_section p_section--gallery">
+                    <div class="ufo--p-container-fluid">
+                      <div class="image-gallery" style="background-color:white;">
+
+                        <img src="img/baitry/user-flow-category.png" class="img-fluid image-margin" alt="Responsive image">
+
+                      </div>
+                    </div>
+                  </section>
+
+                  <section class="p_section p_section--text">
+                      <div class="ufo--p-container-fluid p-container-fluid-margin">
+                        <div class="text-container">
+
+                  <p>実際のUIに落とし込む際は状況確認をメインとし、「選考中」と「採用済み」をセグメンテッドコントロールで分けました。
+                    履歴は別画面を新しく用意し、こちらでも「勤務済み」と「見送り」で分けて設計しました。</p>
+
+
+                  <img src="img/baitry/ui-before-after-11.png" class="img-fluid image-margin" alt="Responsive image">
+
+
+                </div>
+              </div>
+            </section>
+
+            <section class="p_section p_section--text">
+              <div class="ufo--p-container-fluid p-container-fluid-margin">
+                <div class="text-container">
+
+                  <h3>学生向けプロフィール設定</h3>
 
                 </div>
               </div>
@@ -407,14 +620,62 @@
               <div class="ufo--p-container-fluid p-container-fluid-margin">
                 <div class="text-container">
 
-                  <h5 class="container-fluid-h5">課題</h5>
-                  <p>応募時に必ず入力が必要になる画面です。課題としては以下が挙げられました。</p>
-                  <p>・必須項目と任意項目で分けられ、タイトルとして配置されている。普段、必須や任意は補足情報として機能している。</p>
-                  <p>・写真のアップロード条件「3ヶ月以内の撮影、笑顔がベスト」が分かりづらい</p>
+                  <h5 class="container-fluid-h5 container-fluid-h5-mt">前提</h5>
+                  <p>最初にプロフィール設定画面の目的や前提を整理しました。</p>
 
+                    <p><b>目的</b><br>
+                      店舗が選考する際に確認するための情報（写真、氏名、生年月日など）。</p>
+
+                    <p><b>タッチポイント</b><br>
+                      登録直後、応募時、マイページ → コストをいずれの画面にも同じUIを使用。</p>
+
+                    <p><b>制約</b><br>
+                    ・現段階ではUI変更のみであるため（コストがかかる）、大枠の設計（流れ）は変えられない。<br>
+                    ・写真登録は重要だがAppStoreの規約上、登録必須にできない。<br>
+                    ・姓と名の間にスペースを入れて入力してもらわないといけない</p>
+
+
+                  <div class="c-outline-block c-outline-block-mt">
+
+                    <p><b>あるべきUI</b></p>
+                    <p>まずは機能として「必ず登録しなければならない情報が分かり、ストレスなく登録できる」を満たしている事が必要</p>
+
+                  </div>
+
+                  <h5 class="container-fluid-h5 container-fluid-h5-mt">課題</h5>
+
+                  <div class="c-outline-block c-outline-block-mt">
+                    <p><b>全体</b></p>
+                      <p>・必須項目が分かりづらく、必ず登録しなければならない情報かどうかの見分けがつきにくい。
+                        （→ 写真面積が大きいため、タイトルの「必須項目」がフォームの範囲まで含まれているのかどうか分かりづらい。）
+                    <p>・必須項目や任意項目のタイトルが目立ち、肝心のフォーム項目は入力しづらい。</p>
+                    <p><b>写真</b></p>
+                      <p>・アップロード条件「3ヶ月以内の撮影、笑顔がベスト」が分かりづらい。</p>
+                    <p><b>制約</b></p>
+                      <p>・App Storeでは、写真登録を必須にしてはいけないが、必須になっている → ただ、大切な情報のため出来るだけ写真を登録してもらう必要がある。</p>
+                  </div>
+
+                  <img src="img/baitry/old-spotmate_kadai.png" class="img-fluid image-margin" alt="Responsive image">
 
                   <h5 class="container-fluid-h5 container-fluid-h5-mt">解決</h5>
-                  <p>画像アップする際のルールなどは割と大事なので目立たせられるようにし、直感的に判別、入力しやすいフォームに変更しました。</p>
+                  <p>全体として直感的に判別、入力しやすいフォームに変更しました。</p>
+                  <div class="c-outline-block c-outline-block-mt">
+                  <p><b>全体</b></p>
+                  <p>・タイトルは記載せず、必須情報のみを各フォーム横に配置。フォーム自体も入力しやすいスタイルに変更。</p>
+                  <p><b>写真</b></p>
+                  <p>・アップロード条件「3ヶ月以内の撮影、笑顔がベスト」がすぐに目に入ってくるよう写真横に配置。その際に右利きが多いユーザーを想定して写真部分は右にした。</p>
+                  </div>
+
+                  <img src="img/baitry/ui-before-after-04.png" class="img-fluid image-margin" alt="Responsive image">
+
+                  <div class="c-outline-block c-outline-block-mt">
+                    <p><b>その他、制約</b></p>
+                    <p>・App Storeの規約上では写真登録を必須にはできないが、店舗にとって重要な情報でもあるため、モーダルにて登録促進を促すことに。</p>
+                    <p>・姓名とふりがなには「姓と名の間にスペースを入れる」必要があったため、それが直感的に分かるよう入力と同時に伝える工夫をした。</p>
+                  </div>
+
+                  <img src="img/baitry/ui-before-after-05.png" class="img-fluid image-margin" alt="Responsive image">
+
 
                 </div>
               </div>
