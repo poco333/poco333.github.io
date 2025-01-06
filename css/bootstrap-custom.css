@@ -65,6 +65,7 @@
 }
 
 .name-section{
+  visibility: hidden;
   font-size: 34px;
   font-weight: 300;
   text-align: center;
