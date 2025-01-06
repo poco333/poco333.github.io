@@ -624,6 +624,7 @@ border-bottom: 1px solid #dddddd;
 }
 
 .button-outline {
+  visibility: hidden;
   font-weight: 600;
   border: 1px solid #aaaaaa;
   padding: 10px;
