@@ -592,6 +592,7 @@ border-bottom: 1px solid #dddddd;
 }
 
 .about-name {
+  visibility: hidden;
   margin-top: 10px;
   font-size: 28px;
   font-weight: 500;
