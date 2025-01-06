@@ -4791,6 +4791,7 @@ input[type="button"].btn-block {
 
 
 .navbar-brand {
+  visibility: hidden;
   display: inline-block;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
